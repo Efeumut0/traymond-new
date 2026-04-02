@@ -1,25 +1,25 @@
 ![Traymond](https://github.com/fcFn/fcFn.github.io/blob/master/images/logos/traymond_logo.png) Traymond
 =======
 
+A reworked version of the original [Traymond](https://github.com/fcFn/traymond) by [fcFn](https://github.com/fcFn).
+
 A very simple app for minimizing any window to tray as an icon. Runs in the background.
 
-In case it terminates unexpectedly, restart the app and all the icons for minimized windows will come back.
+The original project was built around a lightweight and practical idea: hide windows in the system tray instead of leaving them open on the taskbar. This version keeps that idea, while improving reliability and fixing several issues found in older builds.
 
-Windows 7 or later required (but see [#3](/../../issues/3)) 
-
-A binary is available [here](https://github.com/fcFn/traymond/releases).
+It includes fixes for hidden windows not reopening properly, missing or broken tray icons, invalid restore entries, crash-recovery problems, and startup or elevated-run tray visibility issues.
 
 Installing
 ------------
 
-No installation required, just run Traymond.exe.
+No installation required, just run `Traymond.exe`.
 
 Controls
 --------
 
 + __Win key + Shift + Z__: Minimize the currently focused window to tray.
 
-+ __Double click on an icon__: Bring back the corresponding hidden window.
++ __Click or double-click on an icon__: Bring back the corresponding hidden window.
 
 + __Tray icon menu__ accessible by right-clicking the Traymond tray icon:
 
@@ -34,21 +34,11 @@ Building
 
 `> nmake`
 
-Please read [this](https://msdn.microsoft.com/en-us/library/f35ctcxw.aspx) if there are any troubles.
-
 ### Microsoft Visual Studio
 
-Import and build using the project files (thanks, [Tyler Szabo](https://github.com/tylerszabo)).
+Import and build using the included project files.
 
-Customizing
--------------
-
-Defines at the top of the file control the key and the mod key for sending windows to tray (use virtual key codes from [here](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx) and mod keys from [here](https://msdn.microsoft.com/en-us/library/windows/desktop/ms646309(v=vs.85).aspx)):
-```
-#define TRAY_KEY VK_Z_KEY
-#define MOD_KEY MOD_WIN + MOD_SHIFT
-```
 Contributing
 ------------
 
-See [Contributing](https://github.com/fcFn/traymond/blob/master/CONTRIBUTING.md).
+Contributions, fixes, and improvements are welcome.
