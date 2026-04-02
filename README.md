@@ -26,19 +26,3 @@ Controls
   + __Restore all windows__: Restore all previously hidden windows.
 
   + __Exit__: Exit Traymond and restore all previously hidden windows.
-
-Building
---------
-
-### Nmake
-
-`> nmake`
-
-### Microsoft Visual Studio
-
-Import and build using the included project files.
-
-Contributing
-------------
-
-Contributions, fixes, and improvements are welcome.
